@@ -5,7 +5,7 @@
 	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
-    	 http://www.springframework.org/schema/beans/spring-beans.xsd
+    	 http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
      	 http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context.xsd
          http://www.springframework.org/schema/aop
@@ -26,9 +26,9 @@
 	<!-- 开启注解扫描 -->
 	<context:annotation-config />
 	<context:component-scan base-package="com.offcn.controller"></context:component-scan>
-	<!-- MVC驱动注解 -->
+	<!-- MVC驱动注解 -->  
 	<mvc:annotation-driven></mvc:annotation-driven>
-
+ 
 	<!-- Spring释放静态文件 -->
 	<!-- <mvc:default-servlet-handler/> <mvc:interceptors> <mvc:interceptor> 
 		<mvc:mapping path="/**"/>根路径下的文件夹里的所有子文件 <bean class="com.offcn.utils.LoginInteceptor"> 
